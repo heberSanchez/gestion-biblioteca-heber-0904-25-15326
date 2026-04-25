@@ -15,7 +15,7 @@ public class Libro {
 
     public Libro(String titulo, String autor, int yearPublicacion) {
         if (titulo == null || titulo.isEmpty()) {
-            throw new IllegalArgumentException("El título del libro no puede estar vacío");
+            throw new IllegalArgumentException("El título del libro no puede estar vacío...");
         }
         if (autor == null || autor.isEmpty()) {
             throw new IllegalArgumentException("El nombre del autor no puede estar vacío");
