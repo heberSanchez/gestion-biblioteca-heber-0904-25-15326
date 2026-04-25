@@ -23,7 +23,7 @@ public class Main {
 
         // Libro inválido
         try {
-            biblioteca.agregarLibro(new Libro("", "Autor", -1));
+            biblioteca.agregarLibro(new Libro("", "Autor o creador", -1));
         } catch (IllegalArgumentException e) {
             System.out.println("Hubo un problema en agregar el libro: " + e.getMessage());
         }
@@ -41,9 +41,9 @@ public class Main {
         Libro encontrado = biblioteca.buscarPorTitulo(tituloBuscar);
 
         if (encontrado != null) {
-            System.out.println("Libro encontrado: " + encontrado.getTitulo());
+            System.out.println("No encontramos tu libro: " + encontrado.getTitulo());
         } else {
-            System.out.println("Libro no encontrado");
+            System.out.println("Encontramos tu libro");
         }
     }
 }
